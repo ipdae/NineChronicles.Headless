@@ -17,6 +17,11 @@ namespace NineChronicles.Standalone.GraphTypes
             Field<ActivationStatusMutation>(
                 name: "activationStatus",
                 resolve: context => standaloneContext.NineChroniclesNodeService);
+
+            Field<GoldMutation>(
+                name: "gold",
+                resolve: context => standaloneContext.NineChroniclesNodeService
+            );
         }
     }
 }
